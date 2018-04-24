@@ -1,0 +1,628 @@
+/*FONTES*/
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+@font-face {
+  font-family: "russoone"
+  src: url("../fonts/russoone.ttf");
+}
+
+@font-face {
+  font-family: "circuit";
+  src: url("../fonts/CircuitBoredNF.ttf");
+}
+
+@font-face {
+  font-family: "apocalipse";
+  src: url("../fonts/28 Days Later.ttf");
+}
+
+@font-face {
+  font-family: "dynamic";
+  src: url(../fonts/dynamic.ttf);
+}
+
+/* TAGS */
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  background-position: center;
+  background-size: 100%;
+  color: white;
+}
+
+header {
+  background-color: #000000;
+  border-bottom:3px solid #696969;
+  height: 69px;
+  width: 100%;
+  top: 0px;
+  position: fixed;
+}
+
+section {
+  width: 73%;
+  margin: auto;
+  font-family: "russoone", sans-serif;
+  text-shadow: 1px 1px black;
+  padding-top: 65px;
+  min-height: 350px;
+}
+
+h1 {
+  text-align: left;
+}
+
+h2 {
+  text-align: center;
+  font-family: "apocalipse", sans-serif;
+  font-size: 30px;
+  padding-top: 75px;
+}
+
+h3 {
+  text-align: center;
+}
+
+h4 {
+  text-align: left;
+}
+
+figcaption {
+  margin-top:10px;
+  font-style: italic;
+}
+
+footer {
+  color: #777;
+  text-align: center;
+  background-color: #000000;
+  border-top: 3px solid #696969;
+  margin-top: 3%;
+}
+
+/* IDs */
+
+#menu {
+  list-style-type: none;
+  text-align: right;
+  width:65%;
+  float: right;
+}
+
+#menu-in {
+	list-style-type: none;
+	text-align: right;
+	width: 65%;
+	float: right;
+}
+
+#menu li {
+  display: inline;
+  font-family: "dynamic", sans-serif;
+  font-size: 20px;
+  color: white;
+  padding-left: 15px;
+}
+
+#menu-in li {
+  display: inline;
+  font-family: "dynamic", sans-serif;
+  font-size: 25px;
+  color: white;
+  padding-left: 15px;
+}
+
+
+#menu li a {
+  color: white;
+  text-align: center;
+}
+
+#menu-in li a {
+  color: white;
+  text-align: center;
+}
+
+#menu li a:link {
+  text-decoration: none;
+}
+
+#menu-in li a:link {
+  text-decoration: none;
+}
+
+#logo {
+  width: 300px;
+  height:150px;
+}
+
+#logo-in {
+	float: left;
+}
+
+#direitos {
+  font-family: sans-serif;
+}
+
+#cad_table {
+  height: 250px;
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+  margin-top: 100px;
+}
+
+#bug_table {
+  height: 250px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+#login_table {
+  height: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+  margin-top: 100px;
+}
+
+
+#btnRegistrar {
+  width: 100px;
+  height: 30px;
+  background-color: #EFEFEF;
+  border-radius: 4px;
+  border: 1px solid #CCC;
+}
+
+#btnRegistrar:hover {
+  background-color: #00BFFF;
+  border: 1px solid #00BFFF;
+}
+
+#btnEntrar {
+  width: 100px;
+  height: 30px;
+  background-color: #EFEFEF;
+  border-radius: 4px;
+  border: 1px solid #CCC;
+  display: none;
+}
+
+#btnEntrar:hover {
+  background-color: #00BFFF;
+  border: 1px solid #00BFFF;
+}
+
+#logout {
+  margin: 0;
+  padding: 0;
+  font-family: "Consolas";
+  background-color: #000000;
+  color: white;
+  font-size: 15px;
+  width: 90px;
+  border: none;
+}
+
+#not-found {
+  background-color: white;
+}
+
+#logout a {
+  margin: 0;
+  padding: 0;
+  font-family: "Consolas";
+  background-color: #000000;
+  color: white;
+  font-size: 15px;
+  width: 90px;
+  border: none;
+  text-decoration: none;
+}
+
+#avatar {
+  text-align: center;
+}
+
+#avatar_tab tr td img {
+  background-color: #EEE;
+  color: black;
+}
+
+#info_tab {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  margin-top: 4%;
+}
+
+#users_online ul {
+  list-style-type: none;
+}
+
+#users_online {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 240px;
+  height: 100%;
+  background: rgba(105, 105, 105, 0.6);
+  border-left: 1px solid black;
+}
+
+#menu-lateral {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100%;
+  background: rgba(105, 105, 105, 0.6);
+  border-right:1px solid black;
+}
+
+#menu-lateral ul {
+  list-style-type: none;
+}
+
+#menu-lateral ul li {
+  float: left;
+  width: 100%;
+  border: 1px solid transparent;
+  padding: 5px;
+  position: relative;
+}
+
+#menu-lateral ul li:hover {
+  border-color: black;
+  background: black;
+  font-weight: bolder;
+}
+
+#menu-lateral ul li a {
+  text-decoration: none;
+  float: left;
+  width: 70%;
+  margin-left: 10px;
+  font-family: "russoone", sans-serif;
+  font-size: 14px;
+  color: white;
+  line-height: 40px;
+}
+
+#users_online ul li {
+  float: left;
+  width: 100%;
+  border: 1px solid transparent;
+  padding: 5px;
+  position: relative;
+}
+
+#users_online ul li:hover {
+  border-color: black;
+  background: black;
+}
+
+#users_online ul li a {
+  text-decoration: none;
+  float: left;
+  width: 70%;
+  margin-left: 10px;
+  font-family: "russoone", sans-serif;
+  font-size: 14px;
+  color: white;
+  line-height: 40px;
+}
+
+#chats {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: black;
+  z-index: 1;
+  border: 2px solid white;
+  border-bottom-color: black;
+  border-left-color: black;
+  border-right-color: black;
+}
+
+/* CLASSES */
+
+.window {
+  float: left;
+  width: 40%;
+  height: auto;
+  position: absolute;
+  left: 30%;
+  top: 22%;
+}
+
+.window .header_window {
+  position: relative;
+  float: left;
+  background: black;
+  padding: 5px;
+  width: 100%;
+  border: 2px solid white;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.window .header_window .close {
+  text-decoration: none;
+  float: left;
+  color: white;
+  font: 16px Tahoma arial;
+  padding: 0 10px 0 0;
+}
+
+.window .header_window .name {
+  float: left;
+  font-size: 16px;
+  font-family: "russoone", sans-serif;
+  color: white;
+}
+
+.window .body_window {
+  float: left;
+  width: 100%;
+  background: rgba(105, 105, 105, 0.7);
+  border: 2px solid white;
+  border-top-color: #00bfff;
+  max-height: 300px;
+  min-height: 100px;
+  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.msg {
+  width: 100%;
+}
+
+.mensagens ul li {
+  float: left;
+  min-width: 60%;
+  height: auto;
+  background: #999;
+  border: 1px solid black;
+  border-radius: 4px;
+  position: relative;
+  padding: 4px;
+  margin-bottom: 8px;
+  margin-right: 25px;
+}
+  
+
+.mensagens ul li.eu {
+  float: right;
+  background: black;
+  border: 1px solid white;
+  margin-left: 25px;
+  min-width: 60%;
+  
+}
+
+.body_window::-webkit-scrollbar{width: 3px;}
+.body_window::-webkit-scrollbar-track{background: #666;}
+.body_window::-webkit-scrollbar-thumb{background: black;}
+
+.window .body_window .mensagens {
+  float: left;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.window .body_window .mensagens ul {
+  list-style-type: none;
+}
+
+.status {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  border-radius: 50%;
+  background: #666;
+}
+
+.status.off {
+  background: #ccc;
+}
+
+.status.on {
+  background: #00bfff;
+}
+
+.imgSmall {
+  float: left;
+  width: 44px;
+  height: 44px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #00bfff;
+  
+}
+.imgSmall img {
+  width: 100%;
+  height: 100%;
+}
+
+.user {
+  font-family: "Consolas";
+  background-color: #000000;
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  width: 110px;
+}
+
+.user:hover {
+  background-color: #CCC;
+  color: black;
+  cursor: pointer;
+}
+
+.figuras {
+  position: relative;
+  left:70px;
+  width:800px;
+  height:400px;
+}
+
+.link-compra {
+  text-align: center;
+}
+
+.foto-temas {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.foto-produto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.foto-vendas {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 70px 20px 70px 40px;
+}
+
+.produto-fotos li {
+  display: inline;
+}
+
+.direita {
+  text-align: right;
+}
+
+.aumenta-texto {
+  width: 400px;
+  height: 200px;
+}
+
+.caixa-texto {
+  background-color: black;
+  color: white;
+}
+
+.social li {
+  display: inline;
+}
+
+.social {
+  position: relative;
+  left: 450px;
+  bottom: 30px;
+}
+
+.produto {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 70px 20px 70px 40px;
+  height: 200px;
+}
+
+.produto img {
+  float: left;
+}
+
+.produto p a {
+  color: #00BFFF;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  overflow: overlay;
+}
+
+.apostila-list {
+  list-style-type: none;
+}
+
+.apostila-list li {
+  display: inline;
+}
+
+.apostila-list li a:link{
+  text-decoration: none;
+}
+
+.login {
+  text-align: center;
+}
+
+.txt:hover {
+  background-color: #CCC;
+}
+
+.txt {
+  height: 35px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  background-color: #EEE;
+  text-align: center;
+  font-family: "Consolas";
+  font-size: 17px;
+}
+
+.botao {
+  width: 100px;
+  height: 40px;
+  background-color: #EFEFEF;
+  border-radius: 5px 5px;
+}
+
+.botao:hover {
+  background-color: #CCC;
+}
+
+.texto {
+  width: 350px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+}
+
+.loginWallpaper {
+  width: 100%;
+  height: 100%;
+  background: black url(../images/matrix.gif);
+  background-position: center;
+  background-size: 100%;
+  margin: 0;
+}
+
+.chatWallpaper {
+  width: 100%;
+  height: 100%;
+  background: black url(../images/background2.jpg);
+  background-position: center;
+  background-size: 100%;
+  margin: 0;
+}
+
+.linha-favorito:hover {
+  background: rgba(0,0,0,0.5);
+}
