@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
   <?php include("panel/head.php"); ?>
-  <title>Registro</title>
+  <title>Cadastro</title>
   <body style="background: url(panel/images/cadastro-back.jpg); background-size: 100%;">
 
     <section>
