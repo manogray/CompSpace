@@ -1,4 +1,3 @@
-<?php date_default_timezone_set('America/Manaus');?>
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="../../panel/css/estiloDEV.css">

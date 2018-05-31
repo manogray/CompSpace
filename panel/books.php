@@ -1,29 +1,28 @@
 <?php
-  mysql_connect("database_devx.mysql.dbaas.com.br", "database_devx", "luis1995");
-  mysql_select_db("database_devx");
+  require_once("../class/conexaoCSdb.php");
 
   $comput = "computacao";
   $exat = "exatas";
   $eletro = "eletronica";
-  $queryComput = sprintf("SELECT * FROM apostilas WHERE area = '$comput'");
-  $resultComput = mysql_query($queryComput);
-  $quantComput = mysql_num_rows($resultComput);
-  $queryExat = sprintf("SELECT * FROM apostilas WHERE area ='$exat'");
-  $resultExat = mysql_query($queryExat);
-  $quantExat = mysql_num_rows($resultExat);
-  $queryEletro = sprintf("SELECT * FROM apostilas WHERE area ='$eletro'");
-  $resultEletro = mysql_query($queryEletro);
-  $quantEletro = mysql_num_rows($resultEletro);
+
+  $resultComput = $mysqli->query("SELECT * FROM apostilas WHERE area = '$comput'");
+  $quantComput = $resultComput->num_rows;
+
+  $resultExat = $mysqli->query("SELECT * FROM apostilas WHERE area ='$exat'");
+  $quantExat = $resultExat->num_rows;
+
+  $resultEletro = $mysqli->query("SELECT * FROM apostilas WHERE area = '$eletro'");
+  $quantEletro = $resultEletro->num_rows;
 ?>
 <!DOCTYPE html>
 <html>
   <?php include("head.php"); ?>
-  <title>Developers Factory X - A maior biblioteca livre de computação do Brasil</title>
+  <title>CompSpace - A maior biblioteca livre de computação do Brasil</title>
   <body>
     
     <?php include("banner.php"); ?>
     
-    <h2>Developers Library</h2>
+    <h2>Library</h2>
     
     <section>
       <a href="apostilas.php?area=exat" style="text-decoration: none; color: white;">
